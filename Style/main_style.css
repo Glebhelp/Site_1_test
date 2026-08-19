@@ -1,0 +1,85 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Opensanse', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+:root {
+    /* Основной брендовый цвет */
+    --color-primary:#00A4E5;
+    --color-primary-hover: #16ACE8;
+
+    /* Цвет текста */
+    --color-text-main:#48555B;
+    --color-text-inverse:#fff;
+
+    /* Цвет фонов */
+    --color-background-white: #fff;
+    --color-background-dark-ight: #E6E6E6;
+    --color-background-dark-blue: #141A20;
+    --color-background-dark: #171819;
+
+}
+
+
+
+
+
+@font-face {
+    font-family: 'BebasNeue', sans-serif;
+    src: url(../Fonts/BebasNeue-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Opensans', sans-serif;
+    src: url(../Fonts/OpenSans-Bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Opensans', sans-serif;
+    src: url(../Fonts/OpenSans-ExtraBold.woff2);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Opensans', sans-serif;
+    src: url(../Fonts/OpenSans-Regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Opensans', sans-serif;
+    src: url(../Fonts/OpenSans-SemiBold.woff2);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
