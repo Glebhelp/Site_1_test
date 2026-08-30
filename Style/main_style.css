@@ -4,6 +4,8 @@ html {
 
 *, *::before, *::after {
     box-sizing: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -11,14 +13,13 @@ img {
     max-width: 100%;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1, h2, h3, h4, h5, h6, p {
     padding: 0;
     margin: 0;
 }
 
 body {
-    margin: 0;
-    font-family: 'Opensanse', sans-serif;
+    font-family: 'OpenSanse', sans-serif;
     font-weight: 400;
 }
 
@@ -44,40 +45,155 @@ body {
 
 }
 
+.text-h3 {
+    font-family: 'Opensans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.23em;
+}
+.text-p {
+    font-family: 'Opensans', sans-serif;
+    font-weight: 400;
+    font-size: 13;
+    line-height: 2.30;
+}
+
+
+
+
+/* Section Header */
+
+.header {
+    background-image: url(../Img/Header_bak.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+
+}
+
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.header__logo {
+    margin-bottom: 314px;
+}
+.header__icon {
+}
+.header_title {
+    font-family: 'BebasNeue', sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    line-height: 1;
+    color: var(--color-text-inverse);
+    margin-bottom: 2px;
+}
+.header__award {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-inverse);
+
+    margin-bottom: 222px;
+}
+.header__scroll {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-text-inverse);
+    letter-spacing: 0.3em;
+margin-bottom: 70px;
+}
+
+/* Section navbar */
+.navbar {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 25px 0 21px;
+    border-bottom: 1px solid  #e5e5e5;
+}
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar__logo {
+}
+.navbar__logo-img {
+}
+.navbar__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 38px;
+}
+.navbar__item {
+}
+.navbar__link {
+    text-decoration: none;
+    cursor: pointer;
+
+    font-family: 'OpenSans', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.090em;
+    font-weight: 600;
+    color: var(--color-text-main);
+    text-transform: uppercase;
+}
+
+.navbar__link:hover {
+    color: var(--color-primary);
+}
+
+
+
+
+
+
 
 
 
 
 @font-face {
-    font-family: 'BebasNeue', sans-serif;
-    src: url(../Fonts/BebasNeue-Regular.woff2);
+    font-family: 'BebasNeue';
+    src: url(../Fonts/BebasNeue-Regular.woff2) format("woff2");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Opensans', sans-serif;
+    font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-Bold.woff2);
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Opensans', sans-serif;
+    font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-ExtraBold.woff2);
     font-weight: 800;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Opensans', sans-serif;
+    font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-Regular.woff2);
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Opensans', sans-serif;
+    font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-SemiBold.woff2);
     font-weight: 600;
     font-style: normal;
