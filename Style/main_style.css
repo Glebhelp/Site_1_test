@@ -53,7 +53,7 @@ body {
 
 }
 
-.text-h3 {
+.text-h2 {
     font-family: 'Opensans', sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -259,6 +259,96 @@ body {
 
 
 
+.services {
+    margin-bottom: 115px;
+}
+.services__container {
+
+}
+.services__inner {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 78px;
+}
+.services__title {
+    margin-right: 150px;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+}
+.services__title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-primary);
+    margin-top: 10px;
+}
+.services__about {
+    width: 100%;
+    max-width: 406px;
+    margin-right: 28px;
+
+    font-family: 'OpenSans',sans-serif;
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--color-text-main);
+    line-height: 1.7;
+    letter-spacing: 0.2px;
+}
+
+.services__button {
+    padding: 11px 29px;
+
+}
+.button {
+    text-decoration: none;
+    font-family: 'OpenSans',sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--color-text-inverse);
+    
+    background-color: var(--color-primary);
+    max-width: 150px;
+    width: 100%;
+    max-height: 40px;
+    height: 100%;
+
+    transition: 0.5s;
+
+}
+.button:hover {
+    transform: scale(110%);
+    transition: 0.5s;
+}
+.services__contant {
+    display: flex;
+    gap: 28px;
+}
+.services__item {
+    padding: 38px 20px;
+    border: 2px solid var(--color-background-dark-ight);
+}
+.services__icon {
+    margin-bottom: 25px;
+}
+.services__subtitle {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.43px;
+    color: var(--color-text-main);
+
+    margin-bottom: 13px;
+}
+.services__text {
+    color: var(--color-text-main);
+}
+
+
+
 
 
 
@@ -323,6 +413,14 @@ body {
     .about__content {
         padding: 0 10px;
 }
+
+    /* Адаптив для services */
+.services__container {
+    padding: 0 10px;
+}
+.services__title {
+    margin-right: 110px;
+}
 }
 
 
@@ -337,6 +435,27 @@ body {
         padding: 0 10px;
 }
 
+ /* Адаптив для services */
+    .services__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.services__title {
+    margin-right: 0;
+}
+.services__about {
+    margin-right: 0;
+}
+}
+
+@media screen and (max-width: 800px) {
+
+ /* Адаптив для services */
+    .services__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 }
 
 
@@ -348,6 +467,13 @@ body {
         font-weight: 400;
 
     }
+
+    /* Адаптив для services */
+    .services__contant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
 
 }
 
