@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -13,7 +15,13 @@ img {
     max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     padding: 0;
     margin: 0;
 }
@@ -30,12 +38,12 @@ body {
 
 :root {
     /* Основной брендовый цвет */
-    --color-primary:#00A4E5;
+    --color-primary: #00A4E5;
     --color-primary-hover: #16ACE8;
 
     /* Цвет текста */
-    --color-text-main:#48555B;
-    --color-text-inverse:#fff;
+    --color-text-main: #48555B;
+    --color-text-inverse: #fff;
 
     /* Цвет фонов */
     --color-background-white: #fff;
@@ -49,13 +57,15 @@ body {
     font-family: 'Opensans', sans-serif;
     font-weight: 700;
     font-size: 18px;
-    letter-spacing: 0.23em;
+    letter-spacing: 0.15em;
 }
+
 .text-p {
-    font-family: 'Opensans', sans-serif;
+    font-family: 'OpenSans', sans-serif;
     font-weight: 400;
-    font-size: 13;
-    line-height: 2.30;
+    font-size: 13px;
+    line-height: 1.7;
+    letter-spacing: 0.19px;
 }
 
 
@@ -81,11 +91,13 @@ body {
     align-items: center;
 
 }
+
 .header__logo {
     margin-bottom: 314px;
 }
-.header__icon {
-}
+
+.header__icon {}
+
 .header_title {
     font-family: 'BebasNeue', sans-serif;
     text-transform: uppercase;
@@ -96,6 +108,7 @@ body {
     color: var(--color-text-inverse);
     margin-bottom: 2px;
 }
+
 .header__award {
     font-family: 'OpenSans', sans-serif;
     font-size: 16px;
@@ -104,6 +117,7 @@ body {
 
     margin-bottom: 222px;
 }
+
 .header__scroll {
     font-family: 'OpenSans', sans-serif;
     font-size: 11px;
@@ -111,7 +125,7 @@ body {
     font-weight: 600;
     color: var(--color-text-inverse);
     letter-spacing: 0.3em;
-margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 /* Section navbar */
@@ -120,25 +134,28 @@ margin-bottom: 70px;
     width: 100%;
     margin: 0 auto;
     padding: 25px 0 21px;
-    border-bottom: 1px solid  #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
+
 .navbar__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.navbar__logo {
-}
-.navbar__logo-img {
-}
+
+.navbar__logo {}
+
+.navbar__logo-img {}
+
 .navbar__list {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 38px;
 }
-.navbar__item {
-}
+
+.navbar__item {}
+
 .navbar__link {
     text-decoration: none;
     cursor: pointer;
@@ -154,6 +171,92 @@ margin-bottom: 70px;
 .navbar__link:hover {
     color: var(--color-primary);
 }
+
+/* Section about */
+
+.about {
+    margin: 58px 0 118px;
+}
+.about__container {
+}
+
+.about__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-text-main);
+}
+.about__title::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-primary);
+    margin: 10px auto 0;
+}
+
+.about__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.about__lead {
+    max-width: 406px;
+    width: 100%;
+    padding-top: 55px;
+
+    font-family: 'OpenSans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-text-main);
+}
+.about__brand {
+    color: var(--color-primary-hover);
+
+}
+.about__description {
+    max-width: 406px;
+    width: 100%;
+
+    color: var(--color-text-main);
+}
+
+.about__work {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.about__work-item {
+    max-width: 140px;
+    width: 100%;
+    height: 224px;
+    padding: 15px 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    font-family: 'OpenSans', sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    color: var(--color-text-inverse);
+    text-transform: uppercase;
+}
+.about__work-item--plan {
+    background-image: url(../Img/Back-plan.jpg);
+}
+.about__work-item--manage {
+    background-image: url(../Img/Back-manage.jpg);
+}
+.about__work-item--build {
+    background-image: url(../Img/Back-build.jpg);
+}
+
 
 
 
@@ -171,6 +274,7 @@ margin-bottom: 70px;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-Bold.woff2);
@@ -178,6 +282,7 @@ margin-bottom: 70px;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-ExtraBold.woff2);
@@ -185,6 +290,7 @@ margin-bottom: 70px;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-Regular.woff2);
@@ -192,10 +298,111 @@ margin-bottom: 70px;
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'OpenSans';
     src: url(../Fonts/OpenSans-SemiBold.woff2);
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+}
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+    /* Адаптив для header */
+    .navbar__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    /* Адаптив для about */
+    .about__content {
+        padding: 0 10px;
+}
+}
+
+
+@media screen and (max-width: 915px) {
+
+    /* Адаптив для about */
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 0 10px;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /* Адаптив для header */
+    .header_title {
+        font-size: 50px;
+        font-weight: 400;
+
+    }
+
+}
+
+
+@media screen and (max-width: 560px) {
+
+    /* Адаптив для header */
+    .header_title {
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+    .header__award {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    /* Адаптив для navbar */
+    .navbar__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        gap: 20px;
+    }
+
+    .navbar__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+        /* Адаптив для about */
+    .about__work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+}
+
+
+@media screen and (max-width: 410px) {
+
+    /* Адаптив для header */
+    .header_title {
+        font-size: 30px;
+        font-weight: 400;
+
+    }
+
+    .header__award {
+        font-size: 10px;
+        font-weight: 400;
+    }
+
 }
